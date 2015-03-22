@@ -22,4 +22,13 @@ class GolondrinaTestSuite {
 		
 		Assert.assertEquals(75, pepita.energia)
 	}
+	
+	@Test
+	def void unaGolondrinaComeYGanaEnergia() {
+		val pepita = new Golondrina()
+		
+		pepita.come(5)
+		
+		Assert.assertEquals(125, pepita.energia)
+	}
 }
